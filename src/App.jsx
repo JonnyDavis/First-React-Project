@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.css';
-import Header from "./trixsy/Header";
-import Aside from "./trixsy/Aside";
-import Main from "./trixsy/Main";
+import Header from "./Header";
+import Paragraph from "./Paragraph";
+import Square from "./Square";
+import People from "./People";
+
 
 const App = () => (
     <div>
-      <Header className="col-md-12" />
-      <Aside className="col-md-4"/>
-      <Main className="col-md-8"/>
+      <Header text="Insert Title Here" />
+      <Paragraph message="hello" />
+      <Square />
+      <People />
     </div>
 );  
 

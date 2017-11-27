@@ -3,8 +3,8 @@ import React from "react";
 
 // create our component
 // just a function that returns JSX
-const Header = () => (
-    <h1>Hello, world!</h1>
+const Header = props => (
+    <h1>{ props.text }</h1>
 );
 
 // export our component
