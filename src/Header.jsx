@@ -3,9 +3,9 @@ import React from "react";
 
 // create our component
 // just a function that returns JSX
-const App = () => (
+const Header = () => (
     <h1>Hello, world!</h1>
 );
 
 // export our component
-export default App;
+export default Header;

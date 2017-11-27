@@ -3,7 +3,7 @@ import React from "react";
 
 // create our component
 // just a function that returns JSX
-const App = () => (
+const MainListPagination = () => (
     <ul className="pagination">
         <li><a href="">1</a></li>
         <li><a href="">2</a></li>
@@ -13,4 +13,4 @@ const App = () => (
 );
 
 // export our component
-export default App;
+export default MainListPagination;

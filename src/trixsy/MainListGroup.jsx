@@ -3,7 +3,7 @@ import React from "react";
 
 // create our component
 // just a function that returns JSX
-const App = () => (
+const MainListGroup = () => (
     <ul className="list-group">
         <li className="list-group-item">Item 1</li>
         <li className="list-group-item">Item 2</li>
@@ -13,4 +13,4 @@ const App = () => (
 );
 
 // export our component
-export default App;
+export default MainListGroup;

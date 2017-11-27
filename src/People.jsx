@@ -12,9 +12,9 @@ const listItems = names.map((name) =>
 
 // create our component
 // just a function that returns JSX
-const App = () => (
+const People = () => (
     <ul>{listItems}</ul>
 );
 
 // export our component
-export default App;
+export default People;

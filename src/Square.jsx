@@ -11,9 +11,9 @@ const divStyle = {
 
 // create our component
 // just a function that returns JSX
-const App = () => (
+const Square = () => (
     <div style={divStyle}> </div>
 );
 
 // export our component
-export default App;
+export default Square;

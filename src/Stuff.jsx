@@ -8,7 +8,7 @@ import People from "./People";
 
 // create our component
 // just a function that returns JSX
-const App = () => (
+const Stuff = () => (
     <div>
         <Header />
         <Paragraph />
@@ -18,4 +18,4 @@ const App = () => (
 );
 
 // export our component
-export default App;
+export default Stuff;

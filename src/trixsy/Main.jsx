@@ -5,7 +5,7 @@ import MainListGroup from "./MainListGroup";
 import MainListPagination from "./MainListPagination";
 // create our component
 // just a function that returns JSX
-const App = () => (
+const Main = () => (
     <main className="col-md-8">
     	<MainParagraph />
     	<MainListGroup />
@@ -14,4 +14,4 @@ const App = () => (
 );
 
 // export our component
-export default App;
+export default Main;
