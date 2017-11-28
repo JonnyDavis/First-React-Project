@@ -8,12 +8,16 @@ import People from "./People";
 
 // create our component
 // just a function that returns JSX
-const Stuff = () => (
+const Stuff = ({square}) => (
     <div>
-        <Header />
-        <Paragraph />
-        <Square />
-        <People />
+      <Header> 
+      Title
+      </Header> 
+      <Paragraph>
+      Hello There
+      </Paragraph>
+      { square ? <Square color="blue" /> : null}
+      <People names={["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]} />
     </div>
 );
 

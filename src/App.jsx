@@ -4,14 +4,12 @@ import Header from "./Header";
 import Paragraph from "./Paragraph";
 import Square from "./Square";
 import People from "./People";
+import Stuff from "./Stuff";
 
 
 const App = () => (
     <div>
-      <Header text="Insert Title Here" />
-      <Paragraph message="hello" />
-      <Square />
-      <People />
+    	<Stuff square={true} />
     </div>
 );  
 

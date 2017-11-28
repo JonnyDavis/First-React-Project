@@ -1,19 +1,21 @@
 // import the React library
 import React from "react";
 
-const names = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"];
 
-const listItems = names.map((name) =>
-    <li key={name.toString()}>
-    {name}
-    </li>	
 
-    );
 
 // create our component
 // just a function that returns JSX
-const People = () => (
-    <ul>{listItems}</ul>
+const People = ({ names }) => (
+
+
+    <ul>
+    {names ?  names.map((name, i) => (
+	    <li key={i}>
+		    {name}
+	    </li>	
+    )) : "Nothing to see here"}
+    </ul>
 );
 
 // export our component
