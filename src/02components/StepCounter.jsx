@@ -11,6 +11,10 @@ class StepCounter extends Component {
 			counter: 0,
 		};
 
+		
+
+
+
 		this.clickedPlus = this.clickedPlus.bind(this);
 		this.clickedMinus = this.clickedMinus.bind(this);
 	}

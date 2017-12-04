@@ -1,29 +1,42 @@
 import React from 'react';
 import './App.css';
-import Clicked from "./02components/Clicked";
-import Square from "./02components/Square";
-import ToggleText from "./02components/ToggleText";
-import Counter from "./02components/Counter";
-import StepCounter from "./02components/StepCounter";
-import CatchMeIfYouCan from "./02components/CatchMeIfYouCan";
-import Length from "./02components/Length";
-import List from "./02components/List";
-import Adder from "./02components/Adder";
+import Buttons from './03components/Buttons.jsx';
+import SignUp from './03components/SignUp.jsx';
+import FormFields from './03components/FormFields.jsx';
+import Header from './01components/Header.jsx';
+import Link from './04components/Link.jsx';
+import FourOhFour from './04components/FourOhFour.jsx';
+import Squares from './03components/Squares.jsx';
+import Length from './02components/Length.jsx';
+import StepCounter from './02components/StepCounter.jsx';
 
 
-const App = () => (
-    <div>
-    	<Clicked />
-    	<Square color1="blue" color2="hotpink" />
-    	<ToggleText initial="Hello" alternate="World" />
-    	<Counter max="5"/>
-    	<StepCounter max={10} step={5}/>
-    	<CatchMeIfYouCan jump={100} />
-    	<Length />
-    	<List />
-    	<Adder />
+import {
+	BrowserRouter as Router,
+	Route,
+	Switch,
+} from "react-router-dom";
 
-    </div>
+const App = () =>  (
+   	<Router>
+	    <div>
+	    	<Header> Title </Header>
+	    	<Switch>
+		    	<Route path="/buttons" component={ Buttons }/>
+		    	<Route exact path="/" component={ Length }/>
+		    	<Route path="/form" component={ SignUp }/>
+		    	<Route path="/Squares/:colour" render={ ({ match }) => (
+		    		<Squares colour={ match.params.colour } />
+		    		)} />
+		    	<Route path="/StepCounter/:max/:step" render={ ({ match }) => (
+		    		<StepCounter step={ match.params.step } max={ match.params.max }/>
+		    		)} />
+		    	<Route path="/form" component={ FormFields }/>
+	    		<Route component={ FourOhFour }/>
+		    </Switch>
+	    	<Link />
+	    </div>
+    </Router>
 );  
 
 export default App;
